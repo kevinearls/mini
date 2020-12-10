@@ -34,8 +34,10 @@ jobs:
         with:
           minikube version: 'v1.15.1'
           kubernetes version: 'v1.19.2'
+          driver: docker
           github token: ${{ secrets.GITHUB_TOKEN }}
-      - name: "setup minikube"
+
+      - name: Start minikube script
         run: ./.ci/start-minikube.sh
 
       - name: Interact with the cluster

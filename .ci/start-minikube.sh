@@ -8,8 +8,9 @@ set -u
 # print each command before executing it
 set -x
 
-minikube status
+sudo apt-get update && sudo apt-get install socat
 
+minikube status
 MINIKUBE=$(which minikube) # it's outside of the regular PATH, so, need the full path when calling with sudo
 
 # waiting for node(s) to be ready
