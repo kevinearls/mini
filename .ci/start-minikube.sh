@@ -21,6 +21,9 @@ for POD in ${COREDNSPODS}
 do
     kubectl wait --for=condition=Ready pod/${POD}  --namespace kube-system --timeout=60s
 done
-sudo ${MINIKUBE} addons enable ingress
+
+
+minikube addons list
+minikube addons enable ingress
 
 eval $(minikube docker-env)
