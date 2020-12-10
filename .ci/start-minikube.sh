@@ -10,6 +10,8 @@ set -x
 
 minikube status
 
+MINIKUBE=$(which minikube) # it's outside of the regular PATH, so, need the full path when calling with sudo
+
 # waiting for node(s) to be ready
 JSONPATH='{range .items[*]}{@.metadata.name}:{range @.status.conditions[*]}{@.type}={@.status};{end}{end}'; until kubectl get nodes -o jsonpath="$JSONPATH" 2>&1 | grep -q "Ready=True"; do sleep 1; done
 
