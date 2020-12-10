@@ -15,17 +15,28 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  example:
+  end-to-end:
     name: Example Minikube-Kubernetes Cluster interaction
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-go@v1
+        with:
+          go-version: '1.14.4'
+      - uses: jpkrohling/setup-operator-sdk@v1.0.2
+        with:
+          operator-sdk-version: v0.18.2
+
       - name: Checkout
         uses: actions/checkout@v1
+
       - name: Setup Minikube
         uses: manusa/actions-setup-minikube@v2.1.0
         with:
           minikube version: 'v1.15.1'
           kubernetes version: 'v1.19.2'
           github token: ${{ secrets.GITHUB_TOKEN }}
+      - name: "setup minikube"
+        run: ./.ci/start-minikube.sh
+
       - name: Interact with the cluster
         run: kubectl get nodes
