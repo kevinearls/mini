@@ -5,6 +5,9 @@ set -e
 #make docker-build
 #docker images
 
+# github builder uses main by default -- see how to change this
+export BUILD_IMAGE=kevinearls/simplehttp:main
+
 env | sort
 kubectl create namespace example
 
