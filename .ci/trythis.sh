@@ -6,7 +6,7 @@ set -e
 #docker images
 
 # github builder uses main by default -- see how to change this
-export BUILD_IMAGE=kevinearls/simplehttp:main
+export BUILD_IMAGE=kevinearls/httpexample:main
 
 env | sort
 kubectl create namespace example
