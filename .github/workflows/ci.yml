@@ -44,4 +44,4 @@ jobs:
         run: kubectl get nodes
 
       - name: Build and run
-        run: ./.ci/try-this.sh
+        run: ./.ci/trythis.sh
