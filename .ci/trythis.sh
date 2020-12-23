@@ -1,16 +1,13 @@
 set -x
+set -e
 
-export BUILD_IMAGE=kevinearls/simplehttp:${GITHUB_SHA}
-make docker-build
-docker images
+#export BUILD_IMAGE=kevinearls/simplehttp:${GITHUB_SHA}
+#make docker-build
+#docker images
 
 env | sort
 kubectl create namespace example
-# DON'T forget docker push  or do I need that?
-# Try building and creating with a SHA
 
-
-# Will we need to push this?
 kubectl create --namespace example deployment httpexample --image=${BUILD_IMAGE}
 kubectl wait --for=condition=available deployment/httpexample --namespace example --timeout=60s
 
