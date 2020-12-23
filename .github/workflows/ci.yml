@@ -42,3 +42,6 @@ jobs:
 
       - name: Interact with the cluster
         run: kubectl get nodes
+
+      - name: Build and run
+        run: ./.ci/try-this.sh
