@@ -1,0 +1,257 @@
+See https://www.edwardthomson.com/blog/github_actions_12_information_about_your_workflow.html
+
+
+2020-12-24T10:19:49.3914686Z ##[section]Starting: Request a runner to run this job
+2020-12-24T10:19:49.6147747Z Can't find any online and idle self-hosted runner in current repository that matches the required labels: 'ubuntu-latest'
+2020-12-24T10:19:49.6147856Z Can't find any online and idle self-hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2020-12-24T10:19:49.6148194Z Found online and idle hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2020-12-24T10:19:49.7700830Z ##[section]Finishing: Request a runner to run this job
+2020-12-24T10:19:58.2031118Z Current runner version: '2.275.1'
+2020-12-24T10:19:58.2064751Z ##[group]Operating System
+2020-12-24T10:19:58.2065720Z Ubuntu
+2020-12-24T10:19:58.2066550Z 18.04.5
+2020-12-24T10:19:58.2066971Z LTS
+2020-12-24T10:19:58.2067715Z ##[endgroup]
+2020-12-24T10:19:58.2068294Z ##[group]Virtual Environment
+2020-12-24T10:19:58.2068952Z Environment: ubuntu-18.04
+2020-12-24T10:19:58.2069621Z Version: 20201210.0
+2020-12-24T10:19:58.2071818Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu18/20201210.0/images/linux/Ubuntu1804-README.md
+2020-12-24T10:19:58.2072938Z ##[endgroup]
+2020-12-24T10:19:58.2077012Z Prepare workflow directory
+2020-12-24T10:19:58.2867091Z Prepare all required actions
+2020-12-24T10:19:58.4020758Z ##[group]Run echo "The github context is:"
+2020-12-24T10:19:58.4023124Z [36;1mecho "The github context is:"[0m
+2020-12-24T10:19:58.4023761Z [36;1mecho "{[0m
+2020-12-24T10:19:58.4024830Z [36;1m  "token": "***",[0m
+2020-12-24T10:19:58.4025347Z [36;1m  "job": "build",[0m
+2020-12-24T10:19:58.4026123Z [36;1m  "ref": "refs/heads/what-will-this-do",[0m
+2020-12-24T10:19:58.4027052Z [36;1m  "sha": "d738cd2afce79acda18f83afc815b2c87694f03c",[0m
+2020-12-24T10:19:58.4028203Z [36;1m  "repository": "kevinearls/mini",[0m
+2020-12-24T10:19:58.4029082Z [36;1m  "repository_owner": "kevinearls",[0m
+2020-12-24T10:19:58.4030106Z [36;1m  "repositoryUrl": "git://github.com/kevinearls/mini.git",[0m
+2020-12-24T10:19:58.4030851Z [36;1m  "run_id": "442139444",[0m
+2020-12-24T10:19:58.4031418Z [36;1m  "run_number": "3",[0m
+2020-12-24T10:19:58.4031961Z [36;1m  "retention_days": "90",[0m
+2020-12-24T10:19:58.4032605Z [36;1m  "actor": "kevinearls",[0m
+2020-12-24T10:19:58.4033246Z [36;1m  "workflow": "Inspect Contexts",[0m
+2020-12-24T10:19:58.4033903Z [36;1m  "head_ref": "",[0m
+2020-12-24T10:19:58.4034409Z [36;1m  "base_ref": "",[0m
+2020-12-24T10:19:58.4034993Z [36;1m  "event_name": "push",[0m
+2020-12-24T10:19:58.4035539Z [36;1m  "event": {[0m
+2020-12-24T10:19:58.4036401Z [36;1m    "after": "d738cd2afce79acda18f83afc815b2c87694f03c",[0m
+2020-12-24T10:19:58.4037538Z [36;1m    "base_ref": null,[0m
+2020-12-24T10:19:58.4038526Z [36;1m    "before": "b3b7bb24722738c99f3e9798e79e5ad10dcb6ad9",[0m
+2020-12-24T10:19:58.4039581Z [36;1m    "commits": [[0m
+2020-12-24T10:19:58.4040130Z [36;1m      {[0m
+2020-12-24T10:19:58.4040600Z [36;1m        "author": {[0m
+2020-12-24T10:19:58.4041181Z [36;1m          "email": "kearls@redhat.com",[0m
+2020-12-24T10:19:58.4041870Z [36;1m          "name": "Kevin Earls",[0m
+2020-12-24T10:19:58.4042479Z [36;1m          "username": "kevinearls"[0m
+2020-12-24T10:19:58.4043081Z [36;1m        },[0m
+2020-12-24T10:19:58.4043924Z [36;1m        "committer": {[0m
+2020-12-24T10:19:58.4044564Z [36;1m          "email": "kearls@redhat.com",[0m
+2020-12-24T10:19:58.4045130Z [36;1m          "name": "Kevin Earls",[0m
+2020-12-24T10:19:58.4045766Z [36;1m          "username": "kevinearls"[0m
+2020-12-24T10:19:58.4046281Z [36;1m        },[0m
+2020-12-24T10:19:58.4046767Z [36;1m        "distinct": true,[0m
+2020-12-24T10:19:58.4047593Z [36;1m        "id": "d738cd2afce79acda18f83afc815b2c87694f03c",[0m
+2020-12-24T10:19:58.4048885Z [36;1m        "message": "Really remove reference to matrix context\n\nSigned-off-by: Kevin Earls <kearls@redhat.com>",[0m
+2020-12-24T10:19:58.4050046Z [36;1m        "timestamp": "2020-12-24T11:19:40+01:00",[0m
+2020-12-24T10:19:58.4050807Z [36;1m        "tree_id": "204039f661289a7030bf3cfe0d0b9ef8eb83b6ee",[0m
+2020-12-24T10:19:58.4052082Z [36;1m        "url": "https://github.com/kevinearls/mini/commit/d738cd2afce79acda18f83afc815b2c87694f03c"[0m
+2020-12-24T10:19:58.4053059Z [36;1m      }[0m
+2020-12-24T10:19:58.4053727Z [36;1m    ],[0m
+2020-12-24T10:19:58.4054519Z [36;1m    "compare": "https://github.com/kevinearls/mini/compare/b3b7bb247227...d738cd2afce7",[0m
+2020-12-24T10:19:58.4055471Z [36;1m    "created": false,[0m
+2020-12-24T10:19:58.4056016Z [36;1m    "deleted": false,[0m
+2020-12-24T10:19:58.4056597Z [36;1m    "forced": false,[0m
+2020-12-24T10:19:58.4057375Z [36;1m    "head_commit": {[0m
+2020-12-24T10:19:58.4057917Z [36;1m      "author": {[0m
+2020-12-24T10:19:58.4058521Z [36;1m        "email": "kearls@redhat.com",[0m
+2020-12-24T10:19:58.4059109Z [36;1m        "name": "Kevin Earls",[0m
+2020-12-24T10:19:58.4059737Z [36;1m        "username": "kevinearls"[0m
+2020-12-24T10:19:58.4060623Z [36;1m      },[0m
+2020-12-24T10:19:58.4061224Z [36;1m      "committer": {[0m
+2020-12-24T10:19:58.4061816Z [36;1m        "email": "kearls@redhat.com",[0m
+2020-12-24T10:19:58.4062527Z [36;1m        "name": "Kevin Earls",[0m
+2020-12-24T10:19:58.4063127Z [36;1m        "username": "kevinearls"[0m
+2020-12-24T10:19:58.4063784Z [36;1m      },[0m
+2020-12-24T10:19:58.4064369Z [36;1m      "distinct": true,[0m
+2020-12-24T10:19:58.4065437Z [36;1m      "id": "d738cd2afce79acda18f83afc815b2c87694f03c",[0m
+2020-12-24T10:19:58.4066673Z [36;1m      "message": "Really remove reference to matrix context\n\nSigned-off-by: Kevin Earls <kearls@redhat.com>",[0m
+2020-12-24T10:19:58.4067588Z [36;1m      "timestamp": "2020-12-24T11:19:40+01:00",[0m
+2020-12-24T10:19:58.4068357Z [36;1m      "tree_id": "204039f661289a7030bf3cfe0d0b9ef8eb83b6ee",[0m
+2020-12-24T10:19:58.4069520Z [36;1m      "url": "https://github.com/kevinearls/mini/commit/d738cd2afce79acda18f83afc815b2c87694f03c"[0m
+2020-12-24T10:19:58.4070731Z [36;1m    },[0m
+2020-12-24T10:19:58.4071213Z [36;1m    "pusher": {[0m
+2020-12-24T10:19:58.4071869Z [36;1m      "email": "kearls@redhat.com",[0m
+2020-12-24T10:19:58.4072478Z [36;1m      "name": "kevinearls"[0m
+2020-12-24T10:19:58.4073044Z [36;1m    },[0m
+2020-12-24T10:19:58.4073651Z [36;1m    "ref": "refs/heads/what-will-this-do",[0m
+2020-12-24T10:19:58.4074493Z [36;1m    "repository": {[0m
+2020-12-24T10:19:58.4075409Z [36;1m      "archive_url": "https://api.github.com/repos/kevinearls/mini/{archive_format}{/ref}",[0m
+2020-12-24T10:19:58.4076249Z [36;1m      "archived": false,[0m
+2020-12-24T10:19:58.4077250Z [36;1m      "assignees_url": "https://api.github.com/repos/kevinearls/mini/assignees{/user}",[0m
+2020-12-24T10:19:58.4078389Z [36;1m      "blobs_url": "https://api.github.com/repos/kevinearls/mini/git/blobs{/sha}",[0m
+2020-12-24T10:19:58.4079702Z [36;1m      "branches_url": "https://api.github.com/repos/kevinearls/mini/branches{/branch}",[0m
+2020-12-24T10:19:58.4081143Z [36;1m      "clone_url": "https://github.com/kevinearls/mini.git",[0m
+2020-12-24T10:19:58.4082361Z [36;1m      "collaborators_url": "https://api.github.com/repos/kevinearls/mini/collaborators{/collaborator}",[0m
+2020-12-24T10:19:58.4083632Z [36;1m      "comments_url": "https://api.github.com/repos/kevinearls/mini/comments{/number}",[0m
+2020-12-24T10:19:58.4084961Z [36;1m      "commits_url": "https://api.github.com/repos/kevinearls/mini/commits{/sha}",[0m
+2020-12-24T10:19:58.4086036Z [36;1m      "compare_url": "https://api.github.com/repos/kevinearls/mini/compare/{base}...{head}",[0m
+2020-12-24T10:19:58.4087588Z [36;1m      "contents_url": "https://api.github.com/repos/kevinearls/mini/contents/{+path}",[0m
+2020-12-24T10:19:58.4088912Z [36;1m      "contributors_url": "https://api.github.com/repos/kevinearls/mini/contributors",[0m
+2020-12-24T10:19:58.4089845Z [36;1m      "created_at": 1607598690,[0m
+2020-12-24T10:19:58.4090414Z [36;1m      "default_branch": "main",[0m
+2020-12-24T10:19:58.4091597Z [36;1m      "deployments_url": "https://api.github.com/repos/kevinearls/mini/deployments",[0m
+2020-12-24T10:19:58.4092575Z [36;1m      "description": null,[0m
+2020-12-24T10:19:58.4093235Z [36;1m      "disabled": false,[0m
+2020-12-24T10:19:58.4094104Z [36;1m      "downloads_url": "https://api.github.com/repos/kevinearls/mini/downloads",[0m
+2020-12-24T10:19:58.4095416Z [36;1m      "events_url": "https://api.github.com/repos/kevinearls/mini/events",[0m
+2020-12-24T10:19:58.4096219Z [36;1m      "fork": false,[0m
+2020-12-24T10:19:58.4097057Z [36;1m      "forks": 0,[0m
+2020-12-24T10:19:58.4097532Z [36;1m      "forks_count": 0,[0m
+2020-12-24T10:19:58.4098481Z [36;1m      "forks_url": "https://api.github.com/repos/kevinearls/mini/forks",[0m
+2020-12-24T10:19:58.4099269Z [36;1m      "full_name": "kevinearls/mini",[0m
+2020-12-24T10:19:58.4100781Z [36;1m      "git_commits_url": "https://api.github.com/repos/kevinearls/mini/git/commits{/sha}",[0m
+2020-12-24T10:19:58.4102884Z [36;1m      "git_refs_url": "https://api.github.com/repos/kevinearls/mini/git/refs{/sha}",[0m
+2020-12-24T10:19:58.4104076Z [36;1m      "git_tags_url": "https://api.github.com/repos/kevinearls/mini/git/tags{/sha}",[0m
+2020-12-24T10:19:58.4105091Z [36;1m      "git_url": "git://github.com/kevinearls/mini.git",[0m
+2020-12-24T10:19:58.4106171Z [36;1m      "has_downloads": true,[0m
+2020-12-24T10:19:58.4106916Z [36;1m      "has_issues": true,[0m
+2020-12-24T10:19:58.4107440Z [36;1m      "has_pages": false,[0m
+2020-12-24T10:19:58.4108024Z [36;1m      "has_projects": true,[0m
+2020-12-24T10:19:58.4108728Z [36;1m      "has_wiki": true,[0m
+2020-12-24T10:19:58.4109531Z [36;1m      "homepage": null,[0m
+2020-12-24T10:19:58.4110355Z [36;1m      "hooks_url": "https://api.github.com/repos/kevinearls/mini/hooks",[0m
+2020-12-24T10:19:58.4111372Z [36;1m      "html_url": "https://github.com/kevinearls/mini",[0m
+2020-12-24T10:19:58.4112036Z [36;1m      "id": 320247203,[0m
+2020-12-24T10:19:58.4112956Z [36;1m      "issue_comment_url": "https://api.github.com/repos/kevinearls/mini/issues/comments{/number}",[0m
+2020-12-24T10:19:58.4114359Z [36;1m      "issue_events_url": "https://api.github.com/repos/kevinearls/mini/issues/events{/number}",[0m
+2020-12-24T10:19:58.4115562Z [36;1m      "issues_url": "https://api.github.com/repos/kevinearls/mini/issues{/number}",[0m
+2020-12-24T10:19:58.4116623Z [36;1m      "keys_url": "https://api.github.com/repos/kevinearls/mini/keys{/key_id}",[0m
+2020-12-24T10:19:58.4117723Z [36;1m      "labels_url": "https://api.github.com/repos/kevinearls/mini/labels{/name}",[0m
+2020-12-24T10:19:58.4118531Z [36;1m      "language": "Shell",[0m
+2020-12-24T10:19:58.4119536Z [36;1m      "languages_url": "https://api.github.com/repos/kevinearls/mini/languages",[0m
+2020-12-24T10:19:58.4120548Z [36;1m      "license": {[0m
+2020-12-24T10:19:58.4121126Z [36;1m        "key": "apache-2.0",[0m
+2020-12-24T10:19:58.4121783Z [36;1m        "name": "Apache License 2.0",[0m
+2020-12-24T10:19:58.4122433Z [36;1m        "node_id": "MDc6TGljZW5zZTI=",[0m
+2020-12-24T10:19:58.4123119Z [36;1m        "spdx_id": "Apache-2.0",[0m
+2020-12-24T10:19:58.4123948Z [36;1m        "url": "https://api.github.com/licenses/apache-2.0"[0m
+2020-12-24T10:19:58.4124775Z [36;1m      },[0m
+2020-12-24T10:19:58.4125288Z [36;1m      "master_branch": "main",[0m
+2020-12-24T10:19:58.4126181Z [36;1m      "merges_url": "https://api.github.com/repos/kevinearls/mini/merges",[0m
+2020-12-24T10:19:58.4127344Z [36;1m      "milestones_url": "https://api.github.com/repos/kevinearls/mini/milestones{/number}",[0m
+2020-12-24T10:19:58.4128328Z [36;1m      "mirror_url": null,[0m
+2020-12-24T10:19:58.4128875Z [36;1m      "name": "mini",[0m
+2020-12-24T10:19:58.4129682Z [36;1m      "node_id": "MDEwOlJlcG9zaXRvcnkzMjAyNDcyMDM=",[0m
+2020-12-24T10:19:58.4131081Z [36;1m      "notifications_url": "https://api.github.com/repos/kevinearls/mini/notifications{?since,all,participating}",[0m
+2020-12-24T10:19:58.4132131Z [36;1m      "open_issues": 0,[0m
+2020-12-24T10:19:58.4132757Z [36;1m      "open_issues_count": 0,[0m
+2020-12-24T10:19:58.4133316Z [36;1m      "owner": {[0m
+2020-12-24T10:19:58.4134302Z [36;1m        "avatar_url": "https://avatars1.githubusercontent.com/u/1008872?v=4",[0m
+2020-12-24T10:19:58.4135311Z [36;1m        "email": "kearls@redhat.com",[0m
+2020-12-24T10:19:58.4136260Z [36;1m        "events_url": "https://api.github.com/users/kevinearls/events{/privacy}",[0m
+2020-12-24T10:19:58.4137401Z [36;1m        "followers_url": "https://api.github.com/users/kevinearls/followers",[0m
+2020-12-24T10:19:58.4138619Z [36;1m        "following_url": "https://api.github.com/users/kevinearls/following{/other_user}",[0m
+2020-12-24T10:19:58.4139890Z [36;1m        "gists_url": "https://api.github.com/users/kevinearls/gists{/gist_id}",[0m
+2020-12-24T10:19:58.4141129Z [36;1m        "gravatar_id": "",[0m
+2020-12-24T10:19:58.4141841Z [36;1m        "html_url": "https://github.com/kevinearls",[0m
+2020-12-24T10:19:58.4142565Z [36;1m        "id": 1008872,[0m
+2020-12-24T10:19:58.4143097Z [36;1m        "login": "kevinearls",[0m
+2020-12-24T10:19:58.4143724Z [36;1m        "name": "kevinearls",[0m
+2020-12-24T10:19:58.4144642Z [36;1m        "node_id": "MDQ6VXNlcjEwMDg4NzI=",[0m
+2020-12-24T10:19:58.4145546Z [36;1m        "organizations_url": "https://api.github.com/users/kevinearls/orgs",[0m
+2020-12-24T10:19:58.4146831Z [36;1m        "received_events_url": "https://api.github.com/users/kevinearls/received_events",[0m
+2020-12-24T10:19:58.4147940Z [36;1m        "repos_url": "https://api.github.com/users/kevinearls/repos",[0m
+2020-12-24T10:19:58.4148789Z [36;1m        "site_admin": false,[0m
+2020-12-24T10:19:58.4149647Z [36;1m        "starred_url": "https://api.github.com/users/kevinearls/starred{/owner}{/repo}",[0m
+2020-12-24T10:19:58.4151060Z [36;1m        "subscriptions_url": "https://api.github.com/users/kevinearls/subscriptions",[0m
+2020-12-24T10:19:58.4151953Z [36;1m        "type": "User",[0m
+2020-12-24T10:19:58.4152788Z [36;1m        "url": "https://api.github.com/users/kevinearls"[0m
+2020-12-24T10:19:58.4153475Z [36;1m      },[0m
+2020-12-24T10:19:58.4154207Z [36;1m      "private": false,[0m
+2020-12-24T10:19:58.4155019Z [36;1m      "pulls_url": "https://api.github.com/repos/kevinearls/mini/pulls{/number}",[0m
+2020-12-24T10:19:58.4155901Z [36;1m      "pushed_at": 1608805186,[0m
+2020-12-24T10:19:58.4156719Z [36;1m      "releases_url": "https://api.github.com/repos/kevinearls/mini/releases{/id}",[0m
+2020-12-24T10:19:58.4157508Z [36;1m      "size": 27,[0m
+2020-12-24T10:19:58.4158226Z [36;1m      "ssh_url": "git@github.com:kevinearls/mini.git",[0m
+2020-12-24T10:19:58.4158867Z [36;1m      "stargazers": 0,[0m
+2020-12-24T10:19:58.4159666Z [36;1m      "stargazers_count": 0,[0m
+2020-12-24T10:19:58.4160719Z [36;1m      "stargazers_url": "https://api.github.com/repos/kevinearls/mini/stargazers",[0m
+2020-12-24T10:19:58.4161921Z [36;1m      "statuses_url": "https://api.github.com/repos/kevinearls/mini/statuses/{sha}",[0m
+2020-12-24T10:19:58.4163081Z [36;1m      "subscribers_url": "https://api.github.com/repos/kevinearls/mini/subscribers",[0m
+2020-12-24T10:19:58.4164360Z [36;1m      "subscription_url": "https://api.github.com/repos/kevinearls/mini/subscription",[0m
+2020-12-24T10:19:58.4165783Z [36;1m      "svn_url": "https://github.com/kevinearls/mini",[0m
+2020-12-24T10:19:58.4166722Z [36;1m      "tags_url": "https://api.github.com/repos/kevinearls/mini/tags",[0m
+2020-12-24T10:19:58.4167691Z [36;1m      "teams_url": "https://api.github.com/repos/kevinearls/mini/teams",[0m
+2020-12-24T10:19:58.4168757Z [36;1m      "trees_url": "https://api.github.com/repos/kevinearls/mini/git/trees{/sha}",[0m
+2020-12-24T10:19:58.4170051Z [36;1m      "updated_at": "2020-12-23T15:26:10Z",[0m
+2020-12-24T10:19:58.4170836Z [36;1m      "url": "https://github.com/kevinearls/mini",[0m
+2020-12-24T10:19:58.4171512Z [36;1m      "watchers": 0,[0m
+2020-12-24T10:19:58.4172109Z [36;1m      "watchers_count": 0[0m
+2020-12-24T10:19:58.4172609Z [36;1m    },[0m
+2020-12-24T10:19:58.4173083Z [36;1m    "sender": {[0m
+2020-12-24T10:19:58.4174314Z [36;1m      "avatar_url": "https://avatars1.githubusercontent.com/u/1008872?v=4",[0m
+2020-12-24T10:19:58.4175515Z [36;1m      "events_url": "https://api.github.com/users/kevinearls/events{/privacy}",[0m
+2020-12-24T10:19:58.4176650Z [36;1m      "followers_url": "https://api.github.com/users/kevinearls/followers",[0m
+2020-12-24T10:19:58.4177892Z [36;1m      "following_url": "https://api.github.com/users/kevinearls/following{/other_user}",[0m
+2020-12-24T10:19:58.4179005Z [36;1m      "gists_url": "https://api.github.com/users/kevinearls/gists{/gist_id}",[0m
+2020-12-24T10:19:58.4180126Z [36;1m      "gravatar_id": "",[0m
+2020-12-24T10:19:58.4181023Z [36;1m      "html_url": "https://github.com/kevinearls",[0m
+2020-12-24T10:19:58.4181684Z [36;1m      "id": 1008872,[0m
+2020-12-24T10:19:58.4182270Z [36;1m      "login": "kevinearls",[0m
+2020-12-24T10:19:58.4182951Z [36;1m      "node_id": "MDQ6VXNlcjEwMDg4NzI=",[0m
+2020-12-24T10:19:58.4184355Z [36;1m      "organizations_url": "https://api.github.com/users/kevinearls/orgs",[0m
+2020-12-24T10:19:58.4185435Z [36;1m      "received_events_url": "https://api.github.com/users/kevinearls/received_events",[0m
+2020-12-24T10:19:58.4186626Z [36;1m      "repos_url": "https://api.github.com/users/kevinearls/repos",[0m
+2020-12-24T10:19:58.4187702Z [36;1m      "site_admin": false,[0m
+2020-12-24T10:19:58.4188529Z [36;1m      "starred_url": "https://api.github.com/users/kevinearls/starred{/owner}{/repo}",[0m
+2020-12-24T10:19:58.4189938Z [36;1m      "subscriptions_url": "https://api.github.com/users/kevinearls/subscriptions",[0m
+2020-12-24T10:19:58.4190858Z [36;1m      "type": "User",[0m
+2020-12-24T10:19:58.4191647Z [36;1m      "url": "https://api.github.com/users/kevinearls"[0m
+2020-12-24T10:19:58.4192336Z [36;1m    }[0m
+2020-12-24T10:19:58.4192824Z [36;1m  },[0m
+2020-12-24T10:19:58.4193441Z [36;1m  "server_url": "https://github.com",[0m
+2020-12-24T10:19:58.4194449Z [36;1m  "api_url": "https://api.github.com",[0m
+2020-12-24T10:19:58.4195283Z [36;1m  "graphql_url": "https://api.github.com/graphql",[0m
+2020-12-24T10:19:58.4196111Z [36;1m  "workspace": "/home/runner/work/mini/mini",[0m
+2020-12-24T10:19:58.4196701Z [36;1m  "action": "run",[0m
+2020-12-24T10:19:58.4197396Z [36;1m  "event_path": "/home/runner/work/_temp/_github_workflow/event.json",[0m
+2020-12-24T10:19:58.4198217Z [36;1m  "action_repository": "",[0m
+2020-12-24T10:19:58.4198779Z [36;1m  "action_ref": "",[0m
+2020-12-24T10:19:58.4199905Z [36;1m  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_10677c90-5d79-4a3c-aa62-0d9f37858876",[0m
+2020-12-24T10:19:58.4201322Z [36;1m  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_10677c90-5d79-4a3c-aa62-0d9f37858876"[0m
+2020-12-24T10:19:58.4202215Z [36;1m}"[0m
+2020-12-24T10:19:58.4202768Z [36;1mecho ""[0m
+2020-12-24T10:19:58.4203376Z [36;1mecho "The job context is:"[0m
+2020-12-24T10:19:58.4203909Z [36;1mecho "{[0m
+2020-12-24T10:19:58.4204635Z [36;1m  "status": "success"[0m
+2020-12-24T10:19:58.4205273Z [36;1m}"[0m
+2020-12-24T10:19:58.4205708Z [36;1mecho ""[0m
+2020-12-24T10:19:58.4206264Z [36;1mecho "The steps context is:"[0m
+2020-12-24T10:19:58.4206865Z [36;1mecho "{}"[0m
+2020-12-24T10:19:58.4207342Z [36;1mecho ""[0m
+2020-12-24T10:19:58.4207920Z [36;1mecho "The runner context is:"[0m
+2020-12-24T10:19:58.4208430Z [36;1mecho "{[0m
+2020-12-24T10:19:58.4208879Z [36;1m  "os": "Linux",[0m
+2020-12-24T10:19:58.4209661Z [36;1m  "tool_cache": "/opt/hostedtoolcache",[0m
+2020-12-24T10:19:58.4210518Z [36;1m  "temp": "/home/runner/work/_temp",[0m
+2020-12-24T10:19:58.4211237Z [36;1m  "workspace": "/home/runner/work/mini"[0m
+2020-12-24T10:19:58.4211811Z [36;1m}"[0m
+2020-12-24T10:19:58.4212346Z [36;1mecho ""[0m
+2020-12-24T10:19:58.4212909Z [36;1mecho "The strategy context is:"[0m
+2020-12-24T10:19:58.4213849Z [36;1mecho "{[0m
+2020-12-24T10:19:58.4214330Z [36;1m  "fail-fast": true,[0m
+2020-12-24T10:19:58.4214856Z [36;1m  "job-index": 0,[0m
+2020-12-24T10:19:58.4215400Z [36;1m  "job-total": 1,[0m
+2020-12-24T10:19:58.4215914Z [36;1m  "max-parallel": 1[0m
+2020-12-24T10:19:58.4216522Z [36;1m}"[0m
+2020-12-24T10:19:58.4216962Z [36;1mecho "Done"[0m
+2020-12-24T10:19:58.5308148Z shell: /bin/bash -e {0}
+2020-12-24T10:19:58.5308916Z ##[endgroup]
+2020-12-24T10:19:59.2109128Z /home/runner/work/_temp/89b2cb95-3a68-4fdf-a0ca-3a5e820150a6.sh: line 14: kearls@redhat.com: No such file or directory
+2020-12-24T10:19:59.2110309Z The github context is:
+2020-12-24T10:19:59.2130224Z ##[error]Process completed with exit code 1.
+2020-12-24T10:19:59.2178368Z Cleaning up orphan processes
